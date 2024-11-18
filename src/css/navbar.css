@@ -1,0 +1,136 @@
+* {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  background-color: var(--primary-navbar-color);
+  color: var(--navbar-text-color);
+  padding: var(--spacing-medium) var(--spacing-large);
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  letter-spacing: 4px;
+}
+
+/* NAVBAR HEADING --------- */
+.navbar__heading-container {
+  flex-grow: 1;
+}
+
+.navbar__heading {
+  font-size: var(--font-size-large);
+  text-align: end;
+}
+
+.navbar__heading a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HAMBURGER MENU ----------- */
+
+/* LINK STYLES ------------ */
+.navbar__link-container {
+  flex-grow: 1;
+}
+
+.navbar__links {
+  height: 100%;
+  display: flex;
+  gap: var(--spacing-x-large);
+  justify-content: center;
+}
+
+.navbar__link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar__links a {
+  color: inherit;
+  font-size: var(--font-size-medium);
+  text-decoration: none;
+  padding: var(--spacing-medium);
+}
+
+.navbar__links a:hover {
+  background-color: #0000be;
+  transition: all 0.3s ease;
+}
+
+.navbar__link:hover {
+  background-color: #0000be;
+  transition: all 0.3s ease;
+}
+
+.navbar__link--active {
+  border-bottom: 1px solid var(--navbar-text-color);
+}
+.navbar__link--active:hover {
+  border-bottom: 1px solid var(--navbar-hover-color);
+}
+
+/* STYLES FOR TOGGLE BUTTON ----------- */
+.navbar__toggle-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__toggle-button {
+  background-color: transparent;
+  border: none;
+  padding: var(--spacing-small);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navbar__toggle-button:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar__toggle-logo {
+  display: block;
+  color: var(--navbar-text-color);
+  visibility: hidden;
+}
+
+.navbar__toggle-logo:hover {
+  color: var(--navbar-hover-color);
+}
+
+.navbar__toggle-logo {
+  visibility: visible;
+}
+.navbar__links {
+  position: absolute;
+  top: 0;
+  right: -1000px;
+  width: 25%;
+  flex-direction: column;
+  transition: 1s;
+  background-color: var(--primary-navbar-color);
+}
+
+.navbar__links--active {
+  right: 0;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .navbar__links {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .navbar__links {
+    width: 100%;
+  }
+}

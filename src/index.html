@@ -3,7 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Assignment 4 Web components</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- NAVBAR HEADING ------------- -->
+        <div class="navbar__heading-container">
+          <h2 class="navbar__heading">
+            <a href="./index.html"> Website Components</a>
+          </h2>
+        </div>
+        <!-- NAVBAR LINKS ------------ -->
+        <div class="navbar__link-container">
+          <ul class="navbar__links">
+            <li>
+              <a href="./index.html" class="navbar__link navbar__link--active"
+                >Home</a
+              >
+            </li>
+            <li><a href="#" class="navbar__link">Buttons</a></li>
+            <li><a href="#" class="navbar__link">Links</a></li>
+            <li><a href="#" class="navbar__link">Contact</a></li>
+          </ul>
+        </div>
+        <!-- TOGGLE BUTTON ----------- -->
+        <div class="navbar__toggle-button-container">
+          <button class="navbar__toggle-button">
+            <i class="fa-solid fa-bars fa-2x navbar__toggle-logo"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
