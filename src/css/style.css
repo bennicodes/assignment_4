@@ -1,5 +1,56 @@
+@font-face {
+  font-family: Lato-Regular;
+  src: url(../assets/fonts/Lato-Regular.ttf);
+}
 body {
   min-width: 340px;
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
+  background-color: #ccdeff;
+  font-family: Lato-Regular, sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: var(--spacing-medium);
+}
+
+.component__container {
+  display: none;
+}
+
+.component__container--active {
+  display: block;
+}
+
+/* Button Section */
+.buttons__component-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards__component-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-large);
+}
+
+.search__component {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-medium);
 }

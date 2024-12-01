@@ -14,7 +14,9 @@ header {
   display: flex;
   align-items: center;
   font-family: sans-serif;
-  letter-spacing: 4px;
+  position: static;
+  top: 0;
+  left: 0;
 }
 
 /* NAVBAR HEADING --------- */
@@ -34,46 +36,43 @@ header {
 
 /* HAMBURGER MENU ----------- */
 
-/* LINK STYLES ------------ */
-.navbar__link-container {
+/* BUTTON STYLES ------------ */
+.navbar__button-container {
   flex-grow: 1;
 }
 
-.navbar__links {
-  height: 100%;
+.navbar__buttons {
+  min-height: 100%;
   display: flex;
-  gap: var(--spacing-x-large);
   justify-content: center;
 }
 
-.navbar__link {
+.navbar__button {
+  color: inherit;
+  background-color: transparent;
   display: flex;
   align-items: center;
   width: 100%;
+  padding: var(--spacing-medium);
+  border: none;
+  font-size: var(--font-size-medium);
 }
 
-.navbar__links a {
+.navbar__buttons button {
   color: inherit;
   font-size: var(--font-size-medium);
   text-decoration: none;
   padding: var(--spacing-medium);
 }
 
-.navbar__links a:hover {
+.navbar__button:hover {
   background-color: #0000be;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.navbar__link:hover {
+.navbar__button--active {
   background-color: #0000be;
-  transition: all 0.3s ease;
-}
-
-.navbar__link--active {
-  border-bottom: 1px solid var(--navbar-text-color);
-}
-.navbar__link--active:hover {
-  border-bottom: 1px solid var(--navbar-hover-color);
 }
 
 /* STYLES FOR TOGGLE BUTTON ----------- */
@@ -87,50 +86,49 @@ header {
   background-color: transparent;
   border: none;
   padding: var(--spacing-small);
+  border-radius: 4px;
   cursor: pointer;
   z-index: 1;
 }
 
 .navbar__toggle-button:hover {
-  transform: scale(1.2);
-  transition: all 0.3s ease-in-out;
+  background-color: #0000be;
+  transition: all 0.3s ease;
+}
+
+.navbar__toggle-button:active {
+  transform: scale(0.9);
+  transition: scale 0.2s ease;
 }
 
 .navbar__toggle-logo {
   display: block;
   color: var(--navbar-text-color);
-  visibility: hidden;
-}
-
-.navbar__toggle-logo:hover {
-  color: var(--navbar-hover-color);
-}
-
-.navbar__toggle-logo {
   visibility: visible;
 }
-.navbar__links {
+
+.navbar__buttons {
   position: absolute;
   top: 0;
-  right: -1000px;
+  left: -100%;
   width: 25%;
   flex-direction: column;
   transition: 1s;
   background-color: var(--primary-navbar-color);
 }
 
-.navbar__links--active {
-  right: 0;
+.navbar__buttons--active {
+  left: 0;
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
-  .navbar__links {
+  .navbar__buttons {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .navbar__links {
+  .navbar__buttons {
     width: 100%;
   }
 }

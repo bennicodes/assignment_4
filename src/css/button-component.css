@@ -1,0 +1,25 @@
+
+.button__container {
+  display: flex;
+  gap: var(--spacing-x-large);
+}
+
+.button {
+  background-color: var(--primary-navbar-color);
+  color: #fff;
+  padding: var(--spacing-medium) var(--spacing-large);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.button--hover:hover {
+  background-color: #0000be;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.button--active:active {
+  transform: scale(0.8);
+  transition: all 0.2s ease;
+}
