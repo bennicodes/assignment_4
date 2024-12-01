@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/button-component.css" />
     <link rel="stylesheet" href="./css/cards-component.css" />
+    <link rel="stylesheet" href="./css/accordion.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Web components</title>
   </head>
@@ -40,7 +41,7 @@
               <button class="navbar__button" id="cards">Cards</button>
             </li>
             <li>
-              <button class="navbar__button" id="contact">Search</button>
+              <button class="navbar__button" id="accordion">Accordion</button>
             </li>
           </ul>
         </div>
@@ -66,14 +67,29 @@
       </div>
     </div>
 
-    <!-- SEARCH COMPONENT -->
+    <!-- ACCORDION COMPONENT -->
     <div class="component__container">
-      <div class="search__component-container">
-        <div class="search">
-          <label for="search">Search Countries:</label>
-          <input type="search" class="search__input" id="search" />
+      <div class="accordion__component-container">
+        <div class="accordion">
+          <div class="accordion__title-container">
+            <h3 class="accordion__title">This is an accordion</h3>
+            <button class="accordion__toggle-button">
+              <i
+                class="fa-solid fa-arrow-down fa-xl accordion__toggle-logo"
+              ></i>
+            </button>
+          </div>
+          <div class="accordion__description-container">
+            <p class="accordion__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+              placeat veniam quis corporis quisquam quaerat consequuntur
+              deleniti praesentium expedita, odio assumenda harum in corrupti
+              modi voluptatibus quia ipsa iusto rerum optio est. Dolor magni,
+              consequatur maiores impedit nihil cupiditate sapiente repellat
+              vitae illum sed nostrum quibusdam quam et voluptates voluptatum?
+            </p>
+          </div>
         </div>
-        <div class="countries"></div>
       </div>
     </div>
 
@@ -81,6 +97,6 @@
     <script src="./js/app.js"></script>
     <script src="./js/button-component.js"></script>
     <script src="./js/cards-component.js"></script>
-    <script src="./js/search-component.js"></script>
+    <script src="./js/accordion-component.js"></script>
   </body>
 </html>

@@ -1,12 +1,11 @@
-
 .button__container {
   display: flex;
   gap: var(--spacing-x-large);
 }
 
 .button {
-  background-color: var(--primary-navbar-color);
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   padding: var(--spacing-medium) var(--spacing-large);
   border-radius: 12px;
   border: none;

@@ -8,8 +8,8 @@ header {
 
 .navbar {
   width: 100%;
-  background-color: var(--primary-navbar-color);
-  color: var(--navbar-text-color);
+  background-color: var(--primary-color);
+  color: var(--text-color);
   padding: var(--spacing-medium) var(--spacing-large);
   display: flex;
   align-items: center;
@@ -103,7 +103,7 @@ header {
 
 .navbar__toggle-logo {
   display: block;
-  color: var(--navbar-text-color);
+  color: var(--text-color);
   visibility: visible;
 }
 
@@ -114,7 +114,7 @@ header {
   width: 25%;
   flex-direction: column;
   transition: 1s;
-  background-color: var(--primary-navbar-color);
+  background-color: var(--primary-color);
 }
 
 .navbar__buttons--active {

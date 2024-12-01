@@ -1,0 +1,55 @@
+.accordion {
+  width: 40%;
+  height: auto;
+}
+
+.accordion__title-container {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-medium);
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.accordion__title {
+  color: var(--text-color);
+}
+
+.accordion__toggle-button {
+  padding: var(--spacing-small);
+  cursor: pointer;
+  border: none;
+  background-color: var(--text-color);
+  border-radius: 0.25rem;
+}
+
+.accordion__toggle-logo {
+  transition: transform 0.3s linear;
+}
+
+/* ------------------ */
+
+.accordion__description-container {
+  background-color: var(--text-color);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+  border-radius: 8px ;
+}
+
+.accordion__description-container--active {
+  max-height: 500px;
+}
+
+.accordion__description {
+  line-height: 1.5;
+  padding: var(--spacing-small);
+}
+
+/* ------------- */
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}
