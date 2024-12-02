@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/search-component.css" />
     <link rel="stylesheet" href="./css/tabs.css" />
     <link rel="stylesheet" href="./css/counter.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Web components</title>
   </head>
@@ -57,6 +58,9 @@
               <button class="navbar__button" id="counter">
                 Numeric Stepper
               </button>
+            </li>
+            <li>
+              <button class="navbar__button" id="popup">Popup Window</button>
             </li>
           </ul>
         </div>
@@ -249,6 +253,21 @@
       </div>
     </div>
 
+    <!-- Popup Window -->
+    <div class="component__container">
+      <div class="popup__component-container">
+        <div class="popup__container">
+          <div class="popup__window">
+            <button class="popup__close-button">
+              <i class="fa-solid fa-circle-xmark fa-xl close__icon"></i>
+            </button>
+            <p>This is a popup window</p>
+          </div>
+        </div>
+        <button class="popup__card popup__card--active">Press Me</button>
+      </div>
+    </div>
+
     <script src="./js/navbar.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/button-component.js"></script>
@@ -257,5 +276,6 @@
     <script src="./js/search-component.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/counter.js"></script>
+    <script src="./js/popup.js"></script>
   </body>
 </html>
