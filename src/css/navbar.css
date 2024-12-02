@@ -51,6 +51,7 @@ header {
 .navbar__buttons p {
   margin-bottom: var(--spacing-x-large);
   border-bottom: 1px solid #fff;
+  padding: var(--spacing-medium);
 }
 
 .navbar__button {

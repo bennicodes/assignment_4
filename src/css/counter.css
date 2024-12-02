@@ -1,0 +1,38 @@
+.counter__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: var(--spacing-medium);
+}
+
+.counter__container button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-small);
+  font-size: var(--font-size-medium);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+}
+
+.counter__container button:hover {
+  background-color: #000099;
+  transition: all 0.3s ease;
+}
+
+.counter__container button:active {
+  transform: scale(0.9);
+  transition: all 0.2s ease;
+}
+
+.counter__container p {
+  background-color: var(--text-color);
+  padding: var(--spacing-small);
+  border-radius: 4px;
+  font-size: var(--font-size-medium);
+}
