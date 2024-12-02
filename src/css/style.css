@@ -16,6 +16,13 @@ main {
   padding: var(--spacing-medium);
 }
 
+.instruction__text {
+  position: relative;
+  top: 200px;
+  text-align: center;
+  font-size: var(--font-size-large);
+}
+
 .component__container {
   display: none;
 }
@@ -64,8 +71,19 @@ main {
   gap: var(--spacing-medium);
 }
 
+.tabs__component-container {
+  height: calc(100vh - 8rem);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+/* Media queries --------------- */
 @media screen and (max-width: 560px) {
-  .cards__component-container{
+  .cards__component-container {
     height: auto;
     gap: var(--spacing-medium);
   }

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/cards-component.css" />
     <link rel="stylesheet" href="./css/accordion.css" />
     <link rel="stylesheet" href="./css/search-component.css" />
+    <link rel="stylesheet" href="./css/tabs.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Web components</title>
   </head>
@@ -47,6 +48,9 @@
             </li>
             <li>
               <button class="navbar__button" id="search">Search Filter</button>
+            </li>
+            <li>
+              <button class="navbar__button" id="tabs">Tabs</button>
             </li>
           </ul>
         </div>
@@ -110,11 +114,131 @@
       </div>
     </div>
 
+    <!-- TODO: Finish tabs component -->
+    <!-- TABS COMPONENT -->
+    <div class="component__container">
+      <div class="tabs__component-container">
+        <div class="tabs">
+          <!-- Titles structure -->
+          <div class="tabs__titles-container">
+            <button class="tabs__title tabs__title--active">Playstation</button>
+            <button class="tabs__title">Xbox</button>
+            <button class="tabs__title">Nintendo</button>
+            <button class="tabs__title">Sega</button>
+          </div>
+          <!-- Tabs description -->
+          <div class="tabs__content-container">
+            <!-- Playstation tab -->
+            <article class="tabs__content tabs__content--active">
+              <span class="tabs__image-container">
+                <img
+                  src="./assets/img/playstation.jpg"
+                  alt="Image of Playstation"
+                />
+              </span>
+              <span class="tabs__description">
+                <p>
+                  The PlayStation 5 (PS5), released by Sony in November 2020, is
+                  a powerful gaming console known for its advanced hardware,
+                  fast load times, and impressive graphics capabilities. It
+                  features a custom SSD for ultra-fast loading, ray tracing for
+                  realistic lighting and reflections, and supports 4K gaming.
+                  The console also introduced the new DualSense controller,
+                  which includes haptic feedback and adaptive triggers, offering
+                  a more immersive gaming experience. With a growing library of
+                  exclusive titles, the PS5 continues to be a favorite among
+                  gamers worldwide.
+                </p>
+                <p>
+                  <a href="https://www.playstation.com">Playstation</a>
+                </p>
+              </span>
+            </article>
+
+            <!-- Xbox tab -->
+            <article class="tabs__content">
+              <span class="tabs__image-container">
+                <img src="./assets/img/xbox.jpg" alt="Image of Xbox" />
+              </span>
+              <span class="tabs__description">
+                <p>
+                  The Xbox Series X, launched by Microsoft in November 2020, is
+                  designed to be one of the most powerful gaming consoles on the
+                  market. With 12 teraflops of processing power, it supports 4K
+                  gaming at up to 120 frames per second and has fast load times
+                  due to its custom SSD. It also features backward compatibility
+                  with thousands of Xbox One, Xbox 360, and original Xbox games.
+                  Paired with the Xbox Game Pass, the Series X provides players
+                  with a vast library of games, making it a highly versatile
+                  choice for gaming enthusiasts.
+                </p>
+                <p>
+                  <a href="https://www.microsoft.com">Microsoft</a>
+                </p>
+              </span>
+            </article>
+
+            <!-- Nintendo -->
+            <article class="tabs__content">
+              <span class="tabs__image-container">
+                <img src="./assets/img/nintendo.jpg" alt="Image of Nintendo" />
+              </span>
+              <span class="tabs__description">
+                <p>
+                  The Nintendo Switch, released in 2017, is a hybrid console
+                  that can be used as both a handheld device and a traditional
+                  console when connected to a TV. Known for its flexibility and
+                  portability, it has become incredibly popular, with a library
+                  of iconic games like "The Legend of Zelda: Breath of the Wild"
+                  and "Animal Crossing: New Horizons." The console's Joy-Con
+                  controllers can be used individually or together, allowing for
+                  various play styles. The Switch also supports online play and
+                  a growing catalog of classic Nintendo games, appealing to a
+                  broad range of gamers.
+                </p>
+                <p>
+                  <a href="https://www.nintendo.com">Nintendo</a>
+                </p>
+              </span>
+            </article>
+
+            <!-- Sega -->
+            <article class="tabs__content">
+              <span class="tabs__image-container">
+                <img src="./assets/img/sega.jpg" alt="Image of Sega" />
+              </span>
+              <span class="tabs__description">
+                <p>
+                  Sega, a Japanese video game developer and publisher, became a
+                  key player in the gaming industry with iconic consoles like
+                  the Sega Genesis and Dreamcast. Known for titles such as
+                  <em>Sonic the Hedgehog</em>, <em>Shenmue</em>, and
+                  <em>Yakuza</em>, Sega shaped the gaming landscape, creating
+                  some of the most beloved franchises in history. Although it no
+                  longer manufactures hardware, the company remains influential
+                  in the industry, focusing on game development for various
+                  platforms. Sega’s legacy continues through its continued
+                  production of popular games and its ongoing commitment to
+                  gaming innovation.
+                </p>
+                <p>
+                  <a href="https://www.wikipedia.com/wiki/sega"
+                    >Sega-Wikipedia</a
+                  >
+                </p>
+              </span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/navbar.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/button-component.js"></script>
     <script src="./js/cards-component.js"></script>
     <script src="./js/accordion.js"></script>
     <script src="./js/search-component.js"></script>
+    <script src="./js/tabs.js"></script>
   </body>
 </html>
