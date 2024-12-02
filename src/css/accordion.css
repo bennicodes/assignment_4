@@ -53,3 +53,15 @@
 .rotate-arrow {
   transform: rotate(180deg);
 }
+
+@media screen and (max-width: 658px) {
+  .accordion{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .accordion{
+    width:80%;
+  }
+}

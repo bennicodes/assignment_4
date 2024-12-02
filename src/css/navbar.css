@@ -45,6 +45,12 @@ header {
   min-height: 100%;
   display: flex;
   justify-content: center;
+  font-size: var(--font-size-large);
+}
+
+.navbar__buttons p {
+  margin-bottom: var(--spacing-x-large);
+  border-bottom: 1px solid #fff;
 }
 
 .navbar__button {
@@ -69,6 +75,11 @@ header {
   background-color: #0000be;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.navbar__button:active {
+  transform: scale(0.95);
+  transition: scale 0.2s ease;
 }
 
 .navbar__button--active {
@@ -130,5 +141,8 @@ header {
 @media screen and (max-width: 580px) {
   .navbar__buttons {
     width: 100%;
+  }
+  .navbar__heading {
+    font-size: var(--font-size-medium);
   }
 }

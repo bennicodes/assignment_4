@@ -1,5 +1,7 @@
 const navbarButtons = document.querySelectorAll(".navbar__button");
 const componentContainers = document.querySelectorAll(".component__container");
+const instructionText = document.querySelector(".instruction__text");
+
 
 // Component selection ------------------
 navbarButtons.forEach((button) => {

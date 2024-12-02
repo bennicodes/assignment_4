@@ -3,6 +3,10 @@
   gap: var(--spacing-x-large);
 }
 
+.button__container button{
+  font-size: var(--font-size-medium);
+}
+
 .button {
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -21,4 +25,10 @@
 .button--active:active {
   transform: scale(0.8);
   transition: all 0.2s ease;
+}
+
+@media screen and (max-width:568px){
+  .button__container{
+    flex-direction: column;
+  }
 }
