@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Removes instruction after 10 seconds
   setTimeout(() => {
     clearInstruction();
-  }, 5000);
+  }, 3000);
 });
 
 // Component selection ------------------

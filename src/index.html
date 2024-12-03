@@ -246,14 +246,26 @@
     <div class="component__container">
       <div class="counter__component-container">
         <div class="counter__container">
-          <button class="subtract__button">-</button>
-          <p class="counter__number">0</p>
-          <button class="add__button">+</button>
+          <p>Stops on zero</p>
+          <div class="numeric__stepper-container">
+            <button class="subtract__button-limited">-</button>
+            <p class="limited__counter-number">0</p>
+            <button class="add__button-limited">+</button>
+          </div>
+        </div>
+
+        <div class="counter__container no__limit-counter">
+          <p>No limitation</p>
+          <div class="numeric__stepper-container">
+            <button class="subtract__button">-</button>
+            <p class="counter__number">0</p>
+            <button class="add__button">+</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Popup Window -->
+    <!-- POPUP COMPONENT -->
     <div class="component__container">
       <div class="popup__component-container">
         <div class="popup__container">
@@ -266,6 +278,11 @@
         </div>
         <button class="popup__card popup__card--active">Press Me</button>
       </div>
+    </div>
+
+    <!-- TOOLTIP COMPONENT -->
+    <div class="component__container">
+      <div class="tooltip__component-container"></div>
     </div>
 
     <script src="./js/navbar.js"></script>

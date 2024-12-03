@@ -89,6 +89,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: var(--spacing-x-large);
 }
 
 .popup__component-container {
