@@ -40,9 +40,6 @@
   transition: all 0.2s ease;
 }
 
-.add__button:disabled,
-.subtract__button:disabled,
-.add__button-limited:disabled,
 .subtract__button-limited:disabled {
   background-color: #9a9a9a;
   cursor: not-allowed;

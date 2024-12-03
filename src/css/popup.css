@@ -1,6 +1,6 @@
 .popup__container {
   width: 100%;
-  height: calc(100vh + 1rem);
+  height: 100vh;
   background-color: #2f2f2f6a;
   justify-content: center;
   align-items: center;
@@ -21,6 +21,7 @@
   border: 1px solid #000;
   border-radius: 16px;
   position: relative;
+  font-size: var(--font-size-medium);
 }
 
 .popup__close-button {
@@ -57,6 +58,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-size: var(--font-size-medium);
 }
 
 .popup__card--disabled {
@@ -64,7 +66,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .popup__container{
-        padding: var(--spacing-medium);
-    }
+  .popup__container {
+    padding: var(--spacing-medium);
+  }
 }

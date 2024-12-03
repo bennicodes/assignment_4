@@ -1,20 +1,29 @@
-const titleContainers = document.querySelectorAll(
-  ".accordion__title-container"
-);
-const descriptionContainers = document.querySelectorAll(
+const titleContainer = document.querySelector(".accordion__title-container");
+const descriptionContainer = document.querySelector(
   ".accordion__description-container"
 );
-
-const accordionToggleLogos = document.querySelectorAll(
-  ".accordion__toggle-logo"
+const openDescriptionContainer = document.querySelector(
+  ".accordion__description-container--open"
 );
 
-titleContainers.forEach((title, index) => {
-  title.addEventListener("click", () => {
-    descriptionContainers[index].classList.toggle(
-      "accordion__description-container--active"
-    );
+const accordionToggleLogo = document.querySelector(".accordion__toggle-logo");
+const openAccordionToggleLogo = document.querySelector(
+  ".accordion__toggle-logo--open"
+);
 
-    accordionToggleLogos[index].classList.toggle("rotate-arrow");
-  });
+// Open and close the accordion
+titleContainer.addEventListener("click", () => {
+  descriptionContainer.classList.toggle(
+    "accordion__description-container--active"
+  );
+
+  accordionToggleLogo.classList.toggle("rotate-arrow");
 });
+
+// Always open accordion
+openDescriptionContainer.classList.add(
+  "accordion__description-container--active"
+);
+openAccordionToggleLogo.classList.add("rotate-arrow");
+
+
