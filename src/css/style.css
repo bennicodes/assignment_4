@@ -104,12 +104,11 @@ main {
 
 .tooltip__component-container {
   width: 100%;
-  height: 100%;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-medium);
-  padding: var(--spacing-medium) 0;
+  padding: var(--spacing-medium);
 }
 
 /* Media queries --------------- */
