@@ -1,10 +1,23 @@
 # Web Components
 
-## Description
+A simple menu which displays a list of web components which are in different states and shows how they work.
 
-This assignment contains a list of components which are in different states.
+## Table of Contents
+
+[Usage](#usage)
+[Features](#features)
+[Sources](#sources)
 
 I chose these components because I feel like almost all of them are used in every functional website you can find and therefore highly relevant to becoming a good developer.
+
+## Usage
+
+Open the index.html file in your browser.
+Follow instructions on screen and press the menu button to select which component you´d like to see.
+
+## Features
+
+Select a component and see how the component looks in different states, and try them out yourself.
 
 ## Sources
 

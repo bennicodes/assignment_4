@@ -65,7 +65,7 @@
   color: var(--text-color);
   text-decoration: none;
   padding: var(--spacing-small);
-  border-radius: 4px;
+  border-radius: 16px;
   transform: translateY(-32px) rotate(30deg);
   transition: 0.3s ease;
   opacity: 0;
