@@ -7,6 +7,8 @@ A simple menu which displays a list of web components which are in different sta
 [Usage](#usage)
 [Features](#features)
 [Sources](#sources)
+[License](#license)
+[Contact](#contact)
 
 I chose these components because I feel like almost all of them are used in every functional website you can find and therefore highly relevant to becoming a good developer.
 
