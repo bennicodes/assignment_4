@@ -18,7 +18,7 @@
   font-size: var(--font-size-medium);
 }
 
-.social__container .facebook,
+.facebook,
 .facebook--closed,
 .facebook--open {
   background-color: #fff;
@@ -32,9 +32,15 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px #a1a1a1bb;
+  z-index: 1;
 }
 
-.social__container .facebook svg {
+.facebook--open {
+  background-color: var(--primary-color);
+  fill: var(--text-color);
+}
+
+.social__container svg {
   height: 100%;
   width: 100%;
 }
@@ -53,21 +59,24 @@
   transition: 0.3s ease;
 }
 
-.social__container .facebook:hover {
-  fill: var(--text-color);
+.tooltip__box {
+  position: absolute;
   background-color: var(--primary-color);
+  color: var(--text-color);
+  text-decoration: none;
+  padding: var(--spacing-small);
+  border-radius: 4px;
+  transform: translateY(-32px) rotate(30deg);
+  transition: 0.3s ease;
+  opacity: 0;
 }
 
-.social__container .facebook:hover::before {
-  transform: translateY(-64px) rotate(0deg);
+.tooltip__box--active {
+  transform: translateY(-86px) rotate(0deg);
   opacity: 1;
 }
 
-.social__container .facebook svg:hover {
-  fill: var(--text-color);
-}
-.social__container .facebook::after {
-  content: "";
+.tooltip__arrow {
   position: absolute;
   height: 0;
   width: 0;
@@ -75,13 +84,23 @@
   border-right: 8px solid transparent;
   border-top: 10px solid var(--primary-color);
   transform: translateY(-24px) rotate(30deg);
-  opacity: 0;
   transition: 0.3s ease;
+  opacity: 0;
 }
 
-.social__container .facebook:hover::after {
-  transform: translateY(-42px) rotate(0deg);
+.tooltip__arrow--active {
+  transform: translateY(-64px) rotate(0deg);
   opacity: 1;
+}
+
+.facebook--active {
+  fill: var(--text-color);
+  background-color: var(--primary-color);
+}
+
+.facebook--open {
+  fill: var(--text-color);
+  background-color: var(--primary-color);
 }
 
 @media screen and (max-width: 440px) {
