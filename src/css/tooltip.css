@@ -1,12 +1,26 @@
 .socials__container {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: var(--spacing-x-large);
+}
+.social__container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-medium);
 }
 
-.social__container a {
+.description {
+  font-size: var(--font-size-medium);
+}
+
+.social__container .facebook,
+.facebook--closed,
+.facebook--open {
   background-color: #fff;
   fill: #000;
   width: 64px;
@@ -20,12 +34,13 @@
   box-shadow: 0 4px 8px #a1a1a1bb;
 }
 
-.social__container a svg {
+.social__container .facebook svg {
   height: 100%;
   width: 100%;
 }
 
-.social__container a::before {
+/* Tooltip styling ------------- */
+.social__container .facebook::before {
   content: "Facebook";
   position: absolute;
   background-color: var(--primary-color);
@@ -38,20 +53,20 @@
   transition: 0.3s ease;
 }
 
-.social__container a:hover {
+.social__container .facebook:hover {
   fill: var(--text-color);
   background-color: var(--primary-color);
 }
 
-.social__container a:hover::before {
+.social__container .facebook:hover::before {
   transform: translateY(-64px) rotate(0deg);
   opacity: 1;
 }
 
-.social__container a svg:hover {
+.social__container .facebook svg:hover {
   fill: var(--text-color);
 }
-.social__container a::after {
+.social__container .facebook::after {
   content: "";
   position: absolute;
   height: 0;
@@ -64,7 +79,13 @@
   transition: 0.3s ease;
 }
 
-.social__container a:hover::after {
+.social__container .facebook:hover::after {
   transform: translateY(-42px) rotate(0deg);
   opacity: 1;
+}
+
+@media screen and (max-width: 440px) {
+  .socials__container {
+    gap: var(--spacing-large);
+  }
 }
