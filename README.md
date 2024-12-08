@@ -6,7 +6,7 @@ A simple menu which displays a list of web components which are in different sta
 
 [Usage](#usage)
 [Features](#features)
-[Sources](#sources)
+[Resources](#resources)
 [License](#license)
 [Contact](#contact)
 
@@ -19,7 +19,10 @@ Follow instructions on screen and press the menu button to select which componen
 
 Select a component and see how the component looks in different states, and try them out yourself.
 
-## Sources
+## Resources
+
+Netlify link:
+https://webapp-components.netlify.app
 
 https://www.youtube.com/watch?v=UQKWc2r_41U&ab_channel=Coding2GO
 
