@@ -46,6 +46,7 @@ header {
   display: flex;
   justify-content: center;
   font-size: var(--font-size-large);
+  z-index: 1;
 }
 
 .navbar__buttons p {
